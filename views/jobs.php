@@ -11,7 +11,7 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
   <a href="#cpp-generalist"><span data-hover="C++ Generalist">C++ Generalist</span></a>
   <a href="#character-animation-engineer"><span data-hover="Character Animation Engineer">Character Animation Engineer</span></a>
   <a href="#devops-engineer"><span data-hover="DevOps Engineer">DevOps Engineer</span></a>
-  <a href="#javascript-content-developer"><span data-hover="Javascript Content Developer">Javascript Content Developer</span></a>
+  <a href="#technical-program-manager"><span data-hover="Technical Program Manager">Technical Program Manager</span></a>
   <a href="#technical-writer"><span data-hover="Technical Writer">Technical Writer</span></a>
   <br />
   <a href="#raconteur"><span data-hover="Raconteur">Raconteur</span></a>
@@ -515,29 +515,56 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
     </div>
   </article>
   <article class="no-border-bottom no-border-top">
-    <p class="lead"><a name="javascript-content-developer">Javascript Content Developer</a></p>
+    <p class="lead"><a name="technical-program-manager">Technical Program Manager</a></p>
     <p>
-      The early users of the High Fidelity platform build 3D models and make the environment 
-      interactive using Javascript. They often push the boundaries of what is possible within 
-      VR and look to the company for technical guidance. 
-    </p>
-    <p>
-      We're looking for a San Francisco based developer to sit beside us and use the latest 
-      features of High Fidelity to build great interactive content. We want you to demonstrate 
-      the capabilities of an open virtual world to our users, and help them in building their 
-      own interactive content.
+      High Fidelity is looking for a Technical Program Manager to plan and drive technology initiatives.
     </p>
     <div class="requirements">
-      <h3>Requirements</h3>
+      <h3>Skills / Qualifications</h3>
       <ul>
         <li>
           <span>
-            Solid experience with Javascript 
+            Ability to understand complex and competing product development priorities, and sequence/distribute tasks
+            across engineers to meet milestone dates
           </span>
         </li>
         <li>
           <span>
-            A portfolio: show us something amazing you've already built
+            Ability to revise workplans on the fly based on new information and effectively communicate changes to
+            team members
+          </span>
+        </li>
+        <li>
+          <span>
+            Ability to continuously track progress of all project team members and keep people (often peers) on task
+          </span>
+        </li>
+        <li>
+          <span>
+            Working knowledge of software engineering, networking protocols, and web application development
+          </span>
+        </li>
+        <li>
+          <span>
+            Experience with Windows, OSX, and Linux
+          </span>
+        </li>
+        <li>
+          <span>
+            Experience with defect management tools, test management tools and software development environments
+          </span>
+        </li>
+        <li>
+          <span>
+            Bachelor's degree in Computer Science, EE, or a related technical degree and/or relevant experience
+          </span>
+        </li>
+      </ul>
+      <h3>Bonus Points</h3>
+      <ul>
+        <li>
+          <span>
+            Experience with Github and open-source projects
           </span>
         </li>
         <li>
@@ -555,17 +582,22 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
             Ability to articulate and prioritize user requirements/feature requests
           </span>
         </li>
+        <li>
+          <span>
+            Passion for Virtual Reality 
+          </span>
+        </li>
       </ul>
-      <h3>Bonus Points</h3>
+      <h3>Professional Qualities</h3>
       <ul>
         <li>
           <span>
-            Game development experience
+            Pathological attention to detail
           </span>
         </li>
         <li>
           <span>
-            Virtual World content development experience
+            Good at explaining, good at thinking out loud, hard to frustrate, and fun to work with
           </span>
         </li>
       </ul>

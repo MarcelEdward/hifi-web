@@ -56,6 +56,20 @@
     </section>
     <div class="container">
         <div>
+            <a href="http://nautil.us/blog/the-man-who-created-second-life-thinks-we-can-make-an-earth_sized-virtual-world" target="_blank">
+                <div>9/27/2015</div>
+                <div>The Man Who Created Second Life Thinks We Can Make an Earth-Sized Virtual World</div>
+                <div>Nautlilus</div>
+            </a>
+        </div>
+        <div>
+            <a href="http://www.wnyc.org/story/why-build-a-virtual-world/" target="_blank">
+                <div>9/18/2015</div>
+                <div>Why Build A Virtual World?</div>
+                <div>TED radio</div>
+            </a>
+        </div>
+        <div>
             <a href="http://recode.net/2015/07/31/in-the-shadow-of-second-life-virtual-reality-startups-say-this-time-itll-work-really/" target="_blank">
                 <div>7/31/2015</div>
                 <div>Welcome to the Metaverse</div>
