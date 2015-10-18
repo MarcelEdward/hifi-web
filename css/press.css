@@ -2,22 +2,7 @@
  * HighFidelity's press page styling
  */
 
-body #navbar {
-    position: relative;
-}
 
-body #navbar nav li {
-    border-color: #dadada;
-}
-
-body #navbar nav li a {
-    background: none transparent;
-    color: #ccc;
-}
-
-body #navbar nav li a[href$='/press'] {
-    color: #535353;
-}
 
 #gofcanvas {
     text-align: center;

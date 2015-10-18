@@ -8,15 +8,6 @@ html > body {
     min-width: 320px;
 }
 
-/* bg is actually from the navbar */
-header#navbar {
-    height: 1200px;
-    background: #ffffff url('../img/Emily-and-hifi-rig-for-website-v2.png') no-repeat 7px 424px;
-    background-size: contain;
-    width: 784px;
-    margin: 0 auto;
-}
-
 #main > article p.lead {
     margin: 0 auto;
     position: absolute;

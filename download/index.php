@@ -4,11 +4,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="copyright" content="Copyright (c) 2014 High Fidelity Inc. http://www.highfidelity.io" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >    
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/chosen/chosen.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/download.css?v=3">
+    <link rel="stylesheet" href="../css/navbar.css">
     <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
     <script type="text/javascript" src="js/chosen.jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -17,11 +18,8 @@
     <script type="text/javascript" src="js/download.js?v=2"></script>
     <title>Download</title>
 </head>
-<header role="header">
-    <nav id="navbar">
-        <a class="logo" href="https://highfidelity.io/" title="High Fidelity"></a>
-    </nav>
-</header>
+<?php require_once('../views/layout/navbar.php');?>
+
 <div id="container">
 	<div id="changelog-container">
 		<div id="changelog-close"></div>

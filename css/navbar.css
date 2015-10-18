@@ -8,65 +8,32 @@
  *
  */
 
-* {
-    box-sizing: content-box;
-    -webkit-box-sizing: content-box;
-    -ms-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-}
-
-#navbar {
-    background: #333;
-    margin: 0px;
-}
-
-#navbar nav li a {
-    text-decoration: none;
-    display: inline-block;
-    font: bold 15px proxima-nova, sans-serif;
-    background: transparent none;
-    padding: 0px 14px 0px 14px;
-    padding-top: 2px;
-    overflow: hidden;
-    height: 31px;
-    vertical-align: top;
-    color: #ccc;
-}
-
-#navbar nav li i {
-    font-style: normal;
-    display: inline-block;
-    border-right: 1px solid #666;
-    height: 10px;
-    position: relative;
-    top: 6px;
-    vertical-align: top;
-}
-
-#navbar nav {
-    background: none rgb(51, 51, 51);
-}
-
-#navbar a.logo {
-    background: url("../img/hifi-logo-text-lightgrey.svg") !important;
-    display: inline-block !important;
-    width: 135px;
-    height: 31px;
-    background-repeat: no-repeat !important;
-    background-size: 150px 116px !important;
-    background-position: 0px -27px !important;
-    position: relative;
-    top: -5px;
+header#navbar {
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    top: 0px;
+    background: #58595B;
 }
 
 .hifi-web-nav {
     margin-bottom: 0;
-    background-color: #333333;
+    background-color: #58595B;
     border-bottom: 0;
 }
 
 .hifi-web-nav .navbar-toggle .icon-bar {
-    background-color: #fff;
+    background-color: #E6E7E8;
+}
+
+#navbar {
+    background: #58595B;
+    width: 100%;
+    text-align: center;
+    height: 60px;
+    line-height: 0px;
 }
 
 #navbar .navbar-header {
@@ -79,26 +46,130 @@
     padding: 0px;
 }
 
-#navbar a.logo:hover {
-    background-image: url("../img/hifi-logo-text-drakgrey.svg") !important;
-}
-
-#navbar .logo.selected,
-#navbar .logo.selected:hover {
-    background-image: url("../img/hifi-logo-text-blue.svg") !important;
-}
-
-#navbar {
-    font-size: 14px;
-    text-align: center;
-    min-height: 60px;
-}
-
 #navbar nav {
     display: inline-block;
     margin: 0 auto;
     text-align: center;
-    line-height: 30px;
+    line-height: 0px;
+}
+
+#navbar nav li a ,
+#navbar nav ul ul li a {
+    text-decoration: none;
+    display: inline-block;
+    font: 13px proxima-nova, sans-serif;
+    background: transparent none;
+    padding: 0px 13px 0px 13px;
+    padding-top: 6px;
+    height: 38px;
+    bottom: 5px;
+    vertical-align: top;
+    color: #E6E7E8;
+}
+
+#navbar hr.hr-nav {
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(88, 89, 91, 0), rgba(88, 89, 91, 0.75), rgba(88, 89, 91, 0)); 
+    width: 74%;
+    margin-left: 8%;
+    display: inline-block;
+    position: relative;
+    top: -0.6em;
+    
+}
+
+#navbar nav ul ul li a {
+    width: 100%;
+    color: #58595B!important;
+}
+
+#navbar div.logo-img {
+    background: url("../img/HIFI-Logo-Nav.svg") ;
+    display: inline-block !important;
+    width: 150px;
+    height: 32px;
+    background-repeat: no-repeat !important;
+    background-size: 150px 32px !important;
+    background-position: 0px 0px !important;
+    position: relative;
+    top: -7px;
+}
+
+#navbar a.username {
+    width:100%;
+}
+
+#navbar div.user_logo {
+    display: inline-block !important;
+    border: 0px;
+    width: 21.6px;
+    height: 20px;
+    background-repeat: no-repeat !important;
+    background-size: 21.6px 20px !important;
+    position: relative;
+    top: -3px;
+    background: url("../img/user_logo.svg") no-repeat  transparent;
+}
+
+
+#navbar div.user_logo:hover {
+    background: url("../img/user_logo_blue.svg");
+}
+
+#navbar div.logo-img:hover {
+    background: url("../img/HIFI-Logo-Nav_blue.svg");
+}
+
+/* explore specific */
+@media screen\0 {
+    #navbar a.username {
+        top: -12px;
+    }
+    #navbar div.user_logo {
+        top: 3px;
+    }
+}
+
+/*firestorm specific*/
+@-moz-document url-prefix() { 
+  #navbar div.user_logo {
+    top: 3px!important;
+  }
+  #navbar a.username {
+    top: -12px;
+  }
+}
+
+#navbar div.logo-img.selected,
+#navbar div.logo-img.selected.hover,
+#navbar .logo.selected,
+#navbar .logo.selected:hover {
+    background: url("../img/HIFI-Logo-Nav_blue.svg");
+}
+
+#navbar span.user_logo.selected,
+#navbar span.user_logo.selected.hover {
+    background: url("../img/user_logo_blue.svg");
+}
+
+#navbar a.logo-home {
+    font-size: 17px;
+    top: -9px;
+}
+
+#navbar a.signup {
+    background: #BCBEC0;
+    color: #58595B!important;
+    height: 27px!important;
+}
+
+#navbar li.hover {
+    color: #18A6DF;
+}
+
+#navbar .spacer {
+    width: 60px;
+    height: 10px;
 }
 
 #navbar nav ul {
@@ -110,16 +181,98 @@
 #navbar nav li {
     float: left ;
     list-style-type: none;
-    border-color: #dadada;
+    background-position: 0px 0px;
+}
+
+
+#navbar nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background: #E6E7E8;
+    padding-top: 20px;
+    padding-bottom: 101%;
+    box-sizing: content-box!important;
+    -webkit-box-sizing: content-box!important;
+    -ms-box-sizing: content-box!important;
+    -moz-box-sizing: content-box!important;
+    height: 100%;
+    left: -10px;
+}
+
+#navbar nav ul ul li {
+    display: inline-block;
+    text-align: left;
+    margin: 0;
+    height: 21px;
+    width: 100%;
+    list-style-type: none;
+    background: #E6E7E8;
+    padding-left: 10px;
 }
 
 #navbar nav li.selected a,
 #navbar nav li a:active {
-    color: #535353;
+    color: #18A6DF!important;
 }
 
+#navbar nav ul ul li a:hover,
 #navbar nav li a:hover {
-    color: #666;
+    color: #18A6DF!important;
+}
+
+#navbar nav li:hover > ul
+{
+    display: block;
+    width: 152px;
+}
+
+#navbar nav li:hover > ul::before,
+#navbar nav li:hover > ul::after {
+   position: absolute;
+   top: -10px;
+   left: 15px;
+   display: inline-block;
+   border-right: 10px solid transparent;
+   border-bottom: 10px solid #E6E7E8;
+   border-left: 10px solid transparent;
+   content: '';
+}
+
+#navbar nav ul.user {
+    left: 10px;
+}
+
+@media screen and (max-width: 1161px) {
+    #navbar .spacer {
+        width: 0px;
+        height: 0px;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .container-fluid {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #navbar nav li a {
+        padding: 5px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #navbar nav li a {
+        padding: 4px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #navbar nav li a {
+        padding: 3px;
+        font-size: 11px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -127,18 +280,80 @@
         display: inline-block;
         height: 27px;
         position: relative;
-        top: 20px;
+        top: 23px;
+    }
+    
+    #navbar .full-screen {
+        display: block;
+    }
+    
+    #navbar .mobile {
+        display: none;
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {   
+    #navbar nav li a {
+        font-size: 14px;
+        overflow: visible;
+        line-height: 28px;
+    }
+ 
+    #navbar nav ul.user {
+        left: 0px;
+    }
     
+    #navbar hr.hr-nav {
+        background-image: linear-gradient(to right, rgba(230, 231, 232, 0), rgba(230, 231, 232, 0.75), rgba(230, 231, 232, 0)); 
+        margin-top:0;
+        border:0;
+        border-top:0;
+        width:65%;
+        margin-left: 0;
+        top: -0.3em;
+    }
+    
+    #navbar div.navbar-toggle-on,
+    #navbar .full-screen,
     #navbar li#logo,
     #navbar nav li i,
     #navbar nav.collapse {
         display: none;
     }
+    
+    #navbar a.logo-home {
+        color: #E6E7E8;
+        top: 20px;
+        float: left;
+        margin-left: 20px;
+    }
+    
+    #navbar a.logo-home:hover {
+        color: #18A6DF;
+    }    
+    
+    #navbar div.navbar-toggle-on {
+        color: #E6E7E8;
+        font-size: 26px;
+    }
+    
+    #navbar div.logo-img {
+        top: 15px;
+    }
+    
+    #navbar .mobile {
+        display: initial;
 
+    }
+ 
+    #navbar nav li:hover > ul::before,
+    #navbar nav li:hover > ul::after {
+        left: 35%;
+    }
+    
+    #navbar .mobile ul li {
+    }
+    
     #navbar a.logo {
         width: 160px;
     }
@@ -147,15 +362,10 @@
         margin-top: 14px;
         margin-right: 20px;
     }
-
-    #navbar nav li a {
-        height: 21px;
-        overflow: visible;
-        line-height: 28px;
-    }
-
-    #navbar .navbar-header a.logo {
-        display: block;
+    
+    
+    #navbar .navbar-header li.logo {
+        display: block; 
         left: 30px;
         top: 15px;
         position: absolute;
@@ -164,28 +374,56 @@
     #navbar .navbar-header {
         margin-left: auto;
         margin-right: auto;
+        background-color: #58595B;
     }
 
     #navbar .navbar-header,
     #navbar nav.collapse.in,
     #navbar nav.collapsing {
         display: block;
+        -webkit-overflow-scrolling: touch; 
     }
 
     #navbar .container-fluid {
        padding: 0px;
+       background-color: #58595B;
     }
-
+  
     #navbar nav li {
         float: none;
         text-align: left;
-    }
-
-    #navbar nav ul {
+        text-indent: 15%;
         margin-top: 10px;
+        padding-bottom: .7em;
+    }
+ 
+    #navbar .navbar-collapse {
+        border-top: 0px;
+    }
+    
+    #navbar ul {
+        padding-top: 50px;
+        background-color:  #58595B;
+    }
+    
+    #navbar nav ul ul {
+        display: none;
+        position: relative;
+       
+        border-top: 0px;
+        top: 10px;
+        bottom:10px;
+        padding-top: 10px;
+        padding-bottom: 0px;
+    }
+    
+    #navbar nav ul ul li {
         float: left;
-        padding: 0px;
-        width: 30%;
-        margin-left: 0px;
+        height: 100%;
+    }
+    #navbar nav li:hover > ul
+    {
+        display: inline-block;
+        width: 108%
     }
 }

@@ -2,14 +2,6 @@ body {
     font-family: proxima-nova, sans-serif;
 }
 
-header {
-    font-size: 14px;
-    text-align: center;
-    min-height: 60px;
-    background: #333;
-}
-
-#navbar,
 #inner-container {
     width: 1015px;
     margin: 0 auto;
@@ -88,15 +80,6 @@ header {
 
 .no-margin {
 	border: none !important;
-}
-
-header #navbar a.logo {
-    background: url(../images/hifi-logo-text-lightgrey.svg);
-    width: 150px;
-    height: 60px;
-    display: block;
-    background-repeat: no-repeat;
-    background-position-y: 15px;
 }
 
 #inner-container {
@@ -383,7 +366,6 @@ div.choose-os-container {
 }
 
 @media screen and (max-width: 1070px) {
-    #navbar,
     #inner-container {
         width: 850px;
     }
@@ -402,8 +384,8 @@ div.choose-os-container {
         border-left: none;
     }
 
-    #inner-container,
-    #navbar {
+    #inner-container
+    {
         width: calc(100% - 60px);
     }
 }
